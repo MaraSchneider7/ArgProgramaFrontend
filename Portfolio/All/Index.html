@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Portafolio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <div class="pagina-container" id="paginaContainer">
+
+        <div class="header">
+
+            <div class="margin-derecha">
+                <button class="header-button-arg-programa" id="argProgramaButton"><img class="arg-programa-logo"
+                        src="./Logos/ArgProgLogo.jpg"></button>
+            </div>
+
+            <button class="header-button" id="botonInicio">Inicio</button>
+
+            <button class="header-button" id="botonSobreMi">Sobre mi</button>
+
+            <button class="header-button" id="botonCV">CV</button>
+
+            <button class="header-button" id="botonProyectos">Proyectos</button>
+
+            <button class="header-button" id="botonIngresar">Ingresar</button>
+
+
+            <img class="icon" id="linkedinButton"
+                src='https://banner2.cleanpng.com/20180413/ivq/kisspng-linkedin-computer-icons-clip-art-contact-5ad062383ba2f9.2291432915236060722443.jpg' />
+
+            <img class="icon" id="githubButton"
+                src='data:image/jpeg;base64,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' />
+
+
+
+        </div>
+
+        <!-- perfil editor -->
+
+        <div id="EdicionPage" class="edicion-page">
+            <div class="contenido-editor" id="all-pages">
+
+                <!-- home -->
+                <div class="inicio-container" id="InicioPage">
+    
+                    <div class="self-picture-container">
+                        <img class="self-picture"
+                            src="./Logos/self-picture.png" />
+                    </div>
+    
+    
+                    <div class="contact-me-container">
+                        <div class="editar">
+                            <p class="title">
+                                ¡Hola! Soy Mara
+                            </p>
+                        </div>
+
+                        <div class="editar" id="EditarSubtituloDiv">
+                            <p class="subtitle" id="titulo">
+                            </p>
+                            <img src="./Logos/editarLogo.jpg" class="editar-logo" id="EditarSubtitulo">
+                        </div>
+                        <div class="guardar" id="EditarSubtituloDiv2">
+                            <input type="text" class="inputEdit" multiline id="subtituloValue">
+                            <img src="./Logos/guardarLogo.jpg" class="editar-logo" id="GuardarSubtitulo">
+                        </div>
+    
+                        <div class="editar" id="EditarDescripcionDiv">
+                            <p class="typography" id="tituloDescripcion">
+                            </p>
+                            <img src="./Logos/editarLogo.jpg" class="editar-logo" id="EditarDescripcion">
+                        </div>
+                        <div class="guardar" id="EditarDescripcionDiv2">
+                            <input type="text" class="inputEdit" multiline id="descTituloValue">
+                            <img src="./Logos/guardarLogo.jpg" class="editar-logo" id="GuardarDescripcion">
+                        </div>
+    
+                        <a class="hablemos-button" href=mailto:maraschneider02@gmail.com>
+                            ¡Hablemos!
+                        </a>
+                    </div>
+                </div>
+    
+    
+                <!-- sobre mi -->
+                <div class="sobre-mi-container" id="SobreMiPage">
+                    <div>
+                        <p class="sobre-mi-title">Sobre mi</p>
+                        <div class="editar" id="EditarSobreMiDiv">
+                            <p class="typography" id="descripcionSobreMi"></p>
+                            <img src="./Logos/editarLogo.jpg" class="editar-logo" id="EditarSobreMi">
+                        </div>
+                        <div class="guardar" id="EditarSobreMiDiv2">
+                            <input type="text" class="inputEdit" multiline id="sobreMiValue">
+                            <img src="./Logos/guardarLogo.jpg" class="editar-logo" id="GuardarSobreMi">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sobre-mi-container" id="ExperienciaPage">
+                    <div>
+                        <p class="sobre-mi-title">Experiencia</p>
+                        <div class="editar" id="EditarExperienciaDiv">
+                            <p class="typography" id="experiencia"></p>
+                            <img src="./Logos/editarLogo.jpg" class="editar-logo" id="EditarExperiencia">
+                        </div>
+                        <div class="guardar" id="EditarExperienciaDiv2">
+                            <input type="text" class="inputEdit" multiline id="experienciaValue">
+                            <img src="./Logos/guardarLogo.jpg" class="editar-logo" id="GuardarExperiencia">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sobre-mi-container-educacion" id="SobreMiPage">
+                    <div>
+                        <p class="sobre-mi-title">Educación</p>
+                        <div class="editar" id="EditarEducacionDiv">
+                            <p class="typography" id="educacion"></p>
+                            <img src="./Logos/editarLogo.jpg" class="editar-logo" id="EditarEducacion">
+                        </div>
+                        <div class="guardar" id="EditarEducacionDiv2">
+                            <input type="text" class="inputEdit" multiline id="educacionValue">
+                            <img src="./Logos/guardarLogo.jpg" class="editar-logo" id="GuardarEducacion">
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!--  skills -->
+                <div class="skills-container" id="SkillsPage">
+                    <div class="skills-column-container">
+                        <p class="skills-title">Skills</p>
+                        <div class="carrousel-and-buttons">
+    
+                            <div>
+                                <div class="button-arrow-left" id="goBackButton">
+                                    <img class="back-and-foward-button" src="./Logos/ArrowLeft.png" />
+                                </div>
+    
+                            </div>
+                            <div class="skills-carrousel-pagination-container">
+                                <div class="skills-pagination-items" id="carrousel1">
+                                    <img class="skill-item" src="./Logos/logoHTML.png" />
+                                    <img class="skill-item" src="./Logos/logoCSS.png" />
+                                    <img class="skill-item" src="./Logos/logoJS.png" />
+                                    <img class="skill-item" src="./Logos/logoVSCode.png" />
+                                </div>
+                                <div class="skills-pagination-items" id="carrousel2">
+                                    <img class="skill-item" src="./Logos/logoEclipse.png" />
+                                    <img class="skill-item" src="./Logos/logoReact.png" />
+                                    <img class="skill-item" src="./Logos/logoMaterialUI.png" />
+                                    <img class="skill-item" src="./Logos/logoPostgreSql.png" />
+                                </div>
+                                <div class="skills-pagination-items" id="carrousel3">
+                                    <img class="skill-item" src="./Logos/logoGitlab.png" />
+                                    <img class="skill-item" src="./Logos/logoGit.png" />
+                                    <img class="skill-item" src="./Logos/logoPostman.png" />
+                                    <img class="skill-item" src="./Logos/logoMySql.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="button-arrow-right" id="goFowardButton">
+                                    <img class="back-and-foward-button" src="./Logos/ArrowRight.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sobre-mi-container" id="ProyectosPage">
+                    <div>
+                        <p class="sobre-mi-title">Proyectos</p>
+                        <div class="proyecto-item" id="editar-experiencia">
+                            <img class="proyectos"
+                            src="./Logos/portafolioPersonal.png" />
+                            <p class="typography">
+                                Proyecto portafolio personal <br>
+                                Fecha de inicio: 07/01/2023 <br>
+                            </p>
+                        <div class="divider"></div>
+                        </div>
+                        <div class="proyecto-item" id="editar-experiencia">
+                            <img class="proyectos"
+                            src="./Logos/todoApp.png" />
+                            <p class="typography">
+                                Proyecto lista de tareas <br>
+                                Fecha de inicio: 10/02/2023 <br>
+                            </p>
+                            <div class="divider"></div>
+                        </div>
+                        <div class="proyecto-item" id="editar-experiencia">
+                            <img class="proyectos"
+                            src="./Logos/intranetApp.png" />
+                            <p class="typography">
+                                Proyecto intranet empresarial <br>
+                                Fecha de inicio: 07/07/2022 <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- ingresar -->
+
+            <div class="ingresar-container" id="IngresarPage">
+                <p class="subtitle">¡Iniciá sesión para editar la página!</p>
+                <input type="text" class="ingresar-input" id="emailInput" placeholder="Email">
+                <input type="password" class="ingresar-input" id="passwordInput" placeholder="Contraseña">
+                <p class="error-inicio-sesion" id="errorInicioSesion">Email o contraseña incorrectos</p>
+                <button class="ingresar-button" id="botonIniciarSesion">Iniciar sesión</button>
+            </div>
+
+    </div>
+
+    </div>
+    <script src="Index.js"></script>
+</body>
+
+</html>
