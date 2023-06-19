@@ -103,7 +103,7 @@ const datosUsuario = {
 
 if (localEmail === "") {
     //fetch('http://localhost:8080/usuario/agregarUsuario', {
-        fetch('http://b6uwm2qh0tdur846c7rd-mysql.services.clever-cloud.com/usuario/agregarUsuario', {
+        fetch('http://argprogramabackend.onrender.com/usuario/agregarUsuario', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -138,7 +138,7 @@ if (localEmail === "") {
         })
         .catch((error) => console.error("FETCH ERROR:", error));
 } else {
-    fetch('http://b6uwm2qh0tdur846c7rd-mysql.services.clever-cloud.com/usuario/obtenerUsuario')
+    fetch('http://argprogramabackend.onrender.com/usuario/obtenerUsuario')
         .then((response) => {
             if (response.ok) {
                 return response.json();
@@ -178,7 +178,7 @@ botonIniciarSesion.addEventListener('click', () => {
 
     if (emailInput.value === email && passwordInput.value === password) {
         errorInicioSesion.style.display = "none";
-        fetch('http://b6uwm2qh0tdur846c7rd-mysql.services.clever-cloud.com/usuario/editarUsuario', {
+        fetch('http://argprogramabackend.onrender.com/usuario/editarUsuario', {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -311,7 +311,7 @@ botonProyectos.addEventListener('click', () => {
 /* logica para cerrar sesion */
 botonIngresar.addEventListener('click', () => {
     if (botonIngresar.textContent === "Salir") {
-        fetch('http://b6uwm2qh0tdur846c7rd-mysql.services.clever-cloud.com/usuario/editarUsuario', {
+        fetch('http://argprogramabackend.onrender.com/usuario/editarUsuario', {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -410,7 +410,7 @@ editarEducacion.addEventListener('click', () => {
 
 guardarSubtitulo.addEventListener('click', () => {
     const body = { id: 1, tituloProfesional: subtituloValue.value }
-    fetch('http://b6uwm2qh0tdur846c7rd-mysql.services.clever-cloud.com/usuario/editarUsuario', {
+    fetch('http://argprogramabackend.onrender.com/usuario/editarUsuario', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -440,7 +440,7 @@ guardarSubtitulo.addEventListener('click', () => {
 
 guardarDescripcion.addEventListener('click', () => {
     const body = { id: 1, descripcionTituloProfesional: descValue.value }
-    fetch('http://b6uwm2qh0tdur846c7rd-mysql.services.clever-cloud.com/usuario/editarUsuario', {
+    fetch('http://argprogramabackend.onrender.com/usuario/editarUsuario', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -470,7 +470,7 @@ guardarDescripcion.addEventListener('click', () => {
 
 guardarSobreMi.addEventListener('click', () => {
     const body = { id: 1, infoSobreUsuario: sobreMiValue.value }
-    fetch('http://b6uwm2qh0tdur846c7rd-mysql.services.clever-cloud.com/editarUsuario', {
+    fetch('http://argprogramabackend.onrender.com/editarUsuario', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -500,7 +500,7 @@ guardarSobreMi.addEventListener('click', () => {
 
 guardarExperiencia.addEventListener('click', () => {
     const body = { id: 1, experienciaLaboral: experienciaValue.value }
-    fetch('http://b6uwm2qh0tdur846c7rd-mysql.services.clever-cloud.com/usuario/editarUsuario', {
+    fetch('http://argprogramabackend.onrender.com/usuario/editarUsuario', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -530,7 +530,7 @@ guardarExperiencia.addEventListener('click', () => {
 
 guardarEducacion.addEventListener('click', () => {
     const body = { id: 1, educacion: educacionValue.value }
-    fetch('http://b6uwm2qh0tdur846c7rd-mysql.services.clever-cloud.com/usuario/editarUsuario', {
+    fetch('http://argprogramabackend.onrender.com/usuario/editarUsuario', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
